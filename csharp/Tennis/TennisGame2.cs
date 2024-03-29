@@ -30,11 +30,11 @@ namespace Tennis
             if (player1Points == player2Points && player1Points < 3)
             {
                 if (player1Points == 0)
-                    score = "Love";
+                    score = Score.Love;
                 if (player1Points == 1)
-                    score = "Fifteen";
+                    score = Score.Fifteen;
                 if (player1Points == 2)
-                    score = "Thirty";
+                    score = Score.Thirty;
                 score += "-All";
             }
             if (player1Points == player2Points && player1Points > 2)
@@ -43,50 +43,50 @@ namespace Tennis
             if (player1Points > 0 && player2Points == 0)
             {
                 if (player1Points == 1)
-                    player1Result = "Fifteen";
+                    player1Result = Score.Fifteen;
                 if (player1Points == 2)
-                    player1Result = "Thirty";
+                    player1Result = Score.Thirty;
                 if (player1Points == 3)
-                    player1Result = "Forty";
+                    player1Result = Score.Forty;
 
-                player2Result = "Love";
+                player2Result = Score.Love;
                 score = player1Result + "-" + player2Result;
             }
             if (player2Points > 0 && player1Points == 0)
             {
                 if (player2Points == 1)
-                    player2Result = "Fifteen";
+                    player2Result = Score.Fifteen;
                 if (player2Points == 2)
-                    player2Result = "Thirty";
+                    player2Result = Score.Thirty;
                 if (player2Points == 3)
-                    player2Result = "Forty";
+                    player2Result = Score.Forty;
 
-                player1Result = "Love";
+                player1Result = Score.Love;
                 score = player1Result + "-" + player2Result;
             }
 
             if (player1Points > player2Points && player1Points < 4)
             {
                 if (player1Points == 2)
-                    player1Result = "Thirty";
+                    player1Result = Score.Thirty;
                 if (player1Points == 3)
-                    player1Result = "Forty";
+                    player1Result = Score.Forty;
                 if (player2Points == 1)
-                    player2Result = "Fifteen";
+                    player2Result = Score.Fifteen;
                 if (player2Points == 2)
-                    player2Result = "Thirty";
+                    player2Result = Score.Thirty;
                 score = player1Result + "-" + player2Result;
             }
             if (player2Points > player1Points && player2Points < 4)
             {
                 if (player2Points == 2)
-                    player2Result = "Thirty";
+                    player2Result = Score.Thirty;
                 if (player2Points == 3)
-                    player2Result = "Forty";
+                    player2Result = Score.Forty;
                 if (player1Points == 1)
-                    player1Result = "Fifteen";
+                    player1Result = Score.Fifteen;
                 if (player1Points == 2)
-                    player1Result = "Thirty";
+                    player1Result = Score.Thirty;
                 score = player1Result + "-" + player2Result;
             }
 
