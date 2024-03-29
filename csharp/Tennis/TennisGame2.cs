@@ -10,6 +10,14 @@ namespace Tennis
         private string player1Name;
         private string player2Name;
 
+        private enum Score
+        {
+            Love = 0,
+            Fifteen = 1,
+            Thirty = 2,
+            Forty = 3
+        }
+
         public TennisGame2(string player1Name, string player2Name)
         {
             this.player1Name = player1Name;
